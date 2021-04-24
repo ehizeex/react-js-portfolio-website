@@ -1,0 +1,50 @@
+.main-footer-container {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.main-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+.main-footer-message {
+  font-size: 15px;
+  font-family: "Poppins Bold";
+  color: var(--black);
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 1110px) {
+  .main-footer-message {
+    font-size: 10px;
+    align-items: center;
+  }
+}
+
+.social-icon {
+  font-size: 36px;
+  cursor: pointer;
+  margin: 0px 10px;
+  color: var(--black);
+}
+@media only screen and (max-width: 1110px) {
+  .social-icon {
+    display: none;
+  }
+}
+.social-icon:hover {
+  color: blue;
+}
+
+/* IPAD PRO RESPONSIVENESS */
+@media only screen and (max-width: 1110px) {
+  .main-footer-content {
+    width: 75%;
+  }
+}

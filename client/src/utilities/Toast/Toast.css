@@ -1,0 +1,11 @@
+.Toastify__toast--error {
+    background: var(--toast-error) !important;
+}
+
+.Toastify__toast--success {
+    background: var(--toast-success) !important;
+}
+
+.toast-container .Toastify__toast {
+    box-shadow: var(--toast-shadow) 0px 0px 12px !important;
+}

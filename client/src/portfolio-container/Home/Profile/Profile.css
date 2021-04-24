@@ -1,0 +1,205 @@
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  min-height: fit-content;
+  background-image: url("../../../assets/Home/bg.jpg");
+}
+@media only screen and (max-width: 414px) {
+  .profile-container {
+    background-image: url("../../../assets/Home/bg.jpg");
+    width: 100%;
+    height: 10%;
+  }
+}
+.profile-parent {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+}
+
+.profile-details-name {
+  font-size: 24px;
+  font-family: "Poppins SemiBold";
+}
+
+.profile-details-role {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0 24px 0;
+}
+
+.profile-details-role h1 {
+  font-size: 40px;
+  font-family: "cursive";
+}
+@media only screen and (max-width: 414px) {
+  .profile-details-role h1 {
+    font-size: 25px;
+    font-family: "cursive";
+  }
+}
+
+.primary-text {
+  color: var(--white);
+}
+
+.highlighted-text {
+  color: #ff5823;
+}
+
+.profile-role-tagline {
+  font-size: 19px;
+  margin: 5px 0 0 0;
+  font-family: Poppins Light;
+}
+@media only screen and (max-width: 414px) {
+  .profile-role-tagline {
+    visibility: hidden;
+    font-size: 19px;
+  }
+}
+.profile-options .highlighted-btn {
+  margin: 0 0 0 28px;
+  border-radius: 12px solid white;
+}
+.profile-options .highlighted-btn:hover {
+  margin: 0 0 0 28px;
+  background-color: cornsilk;
+  color: #111;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 0px 0px var(--white);
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
+
+  margin: 0 0px 0 100px;
+}
+
+.profile-picture-background {
+  height: 92%;
+  width: 92%;
+  border-radius: 50%;
+  background-image: url("../../../assets/Home/profilephoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.profile-picture-background:hover {
+  transform: scale(1.07);
+  transition: 1s ease-out;
+}
+
+/* IPAD PRO RESPONSIVENESS */
+@media only screen and (max-width: 1110px) {
+  .profile-picture {
+    margin: 0 0px 0 80px;
+  }
+
+  .profile-details-name {
+    font-size: 20px;
+  }
+
+  .profile-details-role .primary-text {
+    font-size: 34px;
+  }
+
+  .profile-role-tagline {
+    font-size: 12px;
+  }
+
+  .profile-options .btn {
+    width: 120px;
+    padding: 11px 0;
+    z-index: 700;
+  }
+}
+
+/* MOBILE RESPONSIVENESS */
+@media only screen and (max-width: 910px) {
+  .profile-picture {
+    margin: 0 0 0 40px;
+    height: 320px;
+    width: 320px;
+  }
+}
+
+/* MOBILE RESPONSIVENESS */
+@media only screen and (max-width: 810px) {
+  .profile-picture {
+    margin: 0 !important;
+  }
+
+  .profile-parent {
+    flex-direction: column-reverse;
+    margin: 40px 0 0 0;
+  }
+
+  .profile-options {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profile-details {
+    margin: 25px 0 0 0;
+  }
+
+  .profile-options .highlighted-btn {
+    margin: 0 !important;
+  }
+
+  .profile-details-name,
+  .profile-details-role {
+    text-align: center;
+  }
+}
+
+/* MOBILE RESPONSIVENESS */
+@media only screen and (max-width: 375px) {
+  .profile-picture {
+    height: 275px;
+    width: 275px;
+    margin-top: -90px;
+  }
+
+  .profile-details {
+    width: 95%;
+  }
+}
+.colz {
+  color: red;
+}
+.colz .colz-icon i {
+  color: white;
+  padding: 8px;
+  padding-left: 0px;
+}
+.colz .colz-icon i:hover {
+  transform: scale(1.5);
+}
+@media only screen and (max-width: 800px) {
+  .colz .colz-icon i {
+    background-color: lightblue;
+    padding: 0px;
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .profile-role-tagline {
+  }
+}
+
+.profile-role-tagline {
+  /* font-family: "Poppins Thin";
+  font-family: "Poppins Light"; */
+  /* font-family: "Poppins Regular"; */
+  font-family: "Poppins Medium";
+  opacity: 0.9;
+  padding: 0px;
+}
